@@ -1,0 +1,37 @@
+Installeren en testen van Locale Git Repository 
+1.  Download en installeer ‘RailsInstaller’
+Railsinstaller is zowel voor iMac OS als voor Windows OS beschikbaar. De plaats 
+van de directory’s kan afwijken voor Windows en Mac OS!
+Deze Railsinstaller installeert zowel Git, Ruby als Ruby on Rails.
+2. Start ‘Command Prompt with Ruby and Rails’
+U krijgt dan normaal C:>Sites  = $>
+Controleer of de installatie juist is verlopen:
+$>git --version
+$>ruby --version
+$>rails --version
+3. Aanmaken en initialiseren van een (lokale) GIT Repository
+$>mkdir Git
+$>cd Git
+$>mkdir Gitdemo
+$>cd Gitdemo
+$> git config --global user.name "Sauvillers Ludo"
+$> git config --global user.email ludo.sauvillers@khlim.be
+$> git init
+$> Maak een file aan ‘Gitdemo.txt’  (met willekeuirige tekst) en plaats die in de ‘Gitdemo’ 
+directory.
+$> git add .
+$> git commit –m “Initial commit”
+4. Controle:
+$> git config --list 
+$> git log
+5. Aanmaken (remote) repository op ‘GitHub’
+Ga naar de site: https://github.com/ en maak een persoonlijke repository aan.
+Deze repository is gratis, maar daardoor ‘Public’. Dit wil zeggen dat in principe iedereen 
+aan uw code kan. Alleen de betalende versie ondersteunt ‘Private’.
+$> git remote add origin git@github.com:lsauvill/Gitdemo.git
+$> git push origin master
+controle:
+Kijk na of uw file op ‘GitHub’ terug te vinden zijn!
+Plaast een aantal extra files in uw lokale directory en volg opnieuw de hierboven 
+vermelde stappen. Kijk telkens na of je die files terugvindt op GitHub.
+Bij problemen raadpleeg ook ‘ProGit.pdf’ (zie Toledo)
